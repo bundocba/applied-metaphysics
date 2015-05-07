@@ -1,0 +1,118 @@
+/*
+ * jQuery Nivo Slider v2.6
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+#slider-container{
+	height:440px;
+	}
+ 
+#slider{
+	width:930px;
+	height:430px;
+	margin:0;
+	padding:0;
+	border:5px solid #e2e2e2;
+	border-radius:5px;
+	box-shadow:0 1px 0 #fff;
+}
+	
+ul.nivoSlider li{list-style:none;}
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	background:#fff url(../images/system/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	right:0px;
+	top:311px;
+	color:#fff;
+	opacity:1; /* Overridden by captionOpacity setting */
+	width:527px;
+	z-index:8;
+	text-transform:uppercase;font:20px/24px 'Open Sans', sans-serif;
+}
+.nivo-caption .caption-body {
+	padding:10px 0 16px 27px;
+	margin:0;
+	background:url(../images/slider_caption.png);
+	box-shadow:0 1px 3px rgba(0,0,0,.42);
+}
+.nivo-caption .caption-body .intro_space{padding:0 84px 0 0;text-align:right;}
+
+.caption-body .moduleItemTitle{display:block;font-size:30px;line-height:36px;}
+
+.nivo-caption .moduleItemReadMore{
+	position:absolute;right:29px;top:23px;border:none;font-size:0;line-height:0;display:block;width:20px;height:35px;background:url(../images/slider_button.png);padding:0;text-indent:-100px;overflow:hidden;
+	transition:none;-moz-transition:none;-webkit-transition:none;-o-transition:none;box-shadow:none;
+}
+.nivo-caption .moduleItemReadMore:hover{background:url(../images/slider_button.png) -20px 0;}
+
+.nivo-html-caption {
+    display:none;
+}
+
+.nivo-caption .nivo-caption-inner .intro_space em{
+	line-height:24px;}
+	
+/* Control nav styles (e.g. 1,2,3...) */
+
+.nivo-controlNav{
+    bottom: -20px;
+    position: absolute;
+    right: -5px;
+	}
+
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+	width:50px;
+	height:5px;
+	text-indent:-999em;
+	font-size:0px;
+	line-height:0px;
+	display:block;
+	float:left;
+	margin: 0 0 0 5px;
+}

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general" label="RSM_CONF_GENERAL">
+		<field name="registration_code" type="text" label="RSM_CONF_LICENSE_CODE" description="RSM_CONF_LICENSE_CODE_DESC" size="70" class="input-xlarge" default="" />
+		<field name="global_dateformat" type="text" label="RSM_CONF_DATE_FORMAT" description="RSM_CONF_DATE_FORMAT_DESC" size="50" class="input-xlarge" default="d M y H:i" />
+		<field name="absolute_links" type="radio" class="btn-group" label="RSM_CONF_ABSOLUTE_LINKS" description="RSM_CONF_ABSOLUTE_LINKS_DESC" default="1">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="file_extensions" type="textarea" label="RSM_CONF_FILE_EXTENSIONS" description="RSM_CONF_FILE_EXTENSIONS_DESC" size="50" class="input-xlarge" default="" />
+	</fieldset>
+	
+	<fieldset name="notifications" label="RSM_CONF_NOTIFICATIONS">
+		<field name="enable_notifications" type="radio" class="btn-group" label="RSM_CONF_ENABLE_NOTIFICATIONS" description="RSM_CONF_ENABLE_NOTIFICATIONS_DESC" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="notification_emails" type="text" label="RSM_CONF_NOTIFICATION_EMAILS" description="RSM_CONF_NOTIFICATION_EMAILS_DESC" size="70" class="input-xxlarge" default="" />
+	</fieldset>
+	
+	<fieldset name="quota" label="RSM_CONF_QUOTA">
+		<field name="import_querys_nr" type="text" label="RSM_CONF_IMPORT_QUOTA" description="RSM_CONF_IMPORT_QUOTA_DESC" size="10" class="input-small" default="2000" filter="intval" />
+		<field name="export_querys_nr" type="text" label="RSM_CONF_EXPORT_QUOTA" description="RSM_CONF_EXPORT_QUOTA_DESC" size="10" class="input-small" default="1000" filter="intval" />
+		<field name="step" type="text" label="RSM_CONF_SEND_QUOTA" description="RSM_CONF_SEND_QUOTA_DESC" size="10" class="input-small" default="100" filter="intval" />
+	</fieldset>
+	
+	<fieldset name="cron" label="RSM_CONF_CRON">
+		<field name="cron_emails" type="text" label="RSM_CONF_CRON_EMAILS" description="RSM_CONF_CRON_EMAILS_DESC" size="10" class="input-small" default="100" filter="intval" onchange="rsm_calculate_cron_emails()" />
+		<field name="cron_period" type="list" label="RSM_CONF_CRON_PERIOD" description="RSM_CONF_CRON_PERIOD_DESC" default="0" onchange="rsm_calculate_cron_emails()">
+			<option value="0">RSM_CONF_CRON_PERIOD_HOUR</option>
+			<option value="1">RSM_CONF_CRON_PERIOD_DAY</option>
+		</field>
+		<field name="cron_interval_check" type="text" label="RSM_CONF_CRON_INTERVAL_CHECK" description="RSM_CONF_CRON_INTERVAL_CHECK_DESC" size="10" class="input-small" default="1" filter="intval" onchange="rsm_calculate_cron_emails()" />
+	</fieldset>
+	
+	<fieldset name="unsubscribe" label="RSM_CONF_UNSUBSCRIBE">
+		<field name="unsubscribe_option" type="list" label="RSM_CONF_UNSUBSCRIBE_OPTION" description="RSM_CONF_UNSUBSCRIBE_OPTION_DESC" default="userchoice" onchange="rsm_unsubscribe_lists()">
+			<option value="userchoice">RSM_CONF_UNSUBSCRIBE_OPTION_USERCHOICE</option>
+			<option value="lists">RSM_CONF_UNSUBSCRIBE_OPTION_LISTS</option>
+		</field>
+		<field name="unsubscribe_lists" type="rslists" label="RSM_CONF_UNSUBSCRIBE_LISTS" description="RSM_CONF_UNSUBSCRIBE_LISTS_DESC" size="5" class="input-large" multiple="multiple" default="" />
+	</fieldset>
+	
+	<fieldset name="redirects" label="RSM_CONF_REDIRECTS">
+		<field name="redirect_subscribe" type="text" label="RSM_CONF_REDIRECT_SUBSCRIBE" description="RSM_CONF_REDIRECT_SUBSCRIBE_DESC" size="70" class="input-xlarge" default="" />
+		<field name="redirect_activate" type="text" label="RSM_CONF_REDIRECT_ACTIVATE" description="RSM_CONF_REDIRECT_ACTIVATE_DESC" size="70" class="input-xlarge" default="" />
+	</fieldset>
+	
+	<fieldset name="bounce_details" label="RSM_CONF_BOUNCE_DETAILS">
+		<field name="bounce_email" type="text" label="RSM_CONF_BOUNCE_EMAIL" description="RSM_CONF_BOUNCE_EMAIL_DESC" size="70" class="input-xlarge" default="" />
+		<field name="bounce_mail_server" type="text" label="RSM_CONF_BOUNCE_MAIL_SERVER" description="RSM_CONF_BOUNCE_MAIL_SERVER_DESC" size="70" class="input-xlarge" default="" />
+		<field name="bounce_mail_port" type="text" label="RSM_CONF_BOUNCE_MAIL_PORT" description="RSM_CONF_BOUNCE_MAIL_PORT_DESC" size="10" class="input-small" default="" filter="intval" />
+		<field name="bounce_mail_connection" type="list" label="RSM_CONF_BOUNCE_MAIL_CONNECTION" description="RSM_CONF_BOUNCE_MAIL_CONNECTION_DESC" default="imap" onchange="rsm_notice(this.value)">
+			<option value="imap">IMAP</option>
+			<option value="pop3">POP3</option>
+		</field>
+		<field name="bounce_mail_security" type="list" label="RSM_CONF_BOUNCE_MAIL_SECURITY" description="RSM_CONF_BOUNCE_MAIL_SECURITY_DESC" default="0">
+			<option value="0">RSM_CONF_BOUNCE_MAIL_SECURITY_NONE</option>
+			<option value="ssl">SSL</option>
+			<option value="tls">TLS</option>
+		</field>
+		<field name="bounce_mail_certificate" type="radio" class="btn-group" label="RSM_CONF_BOUNCE_MAIL_CERTIFICATE" description="RSM_CONF_BOUNCE_MAIL_CERTIFICATE_DESC" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="bounce_mail_username" type="text" label="RSM_CONF_BOUNCE_MAIL_USERNAME" description="RSM_CONF_BOUNCE_MAIL_USERNAME_DESC" size="50" class="input-large" default="" />
+		<field name="bounce_mail_password" type="password" label="RSM_CONF_BOUNCE_MAIL_PASSWORD" description="RSM_CONF_BOUNCE_MAIL_PASSWORD_DESC" size="50" class="input-large" default="" />
+		<field name="bounce_parse_nr" type="text" label="RSM_CONF_BOUNCE_PARSE_NR" description="RSM_CONF_BOUNCE_PARSE_NR_DESC" size="10" class="input-small" default="10" filter="intval" />
+		<field name="bounce_handle" type="list" label="RSM_CONF_BOUNCE_HANDLE" description="RSM_CONF_BOUNCE_HANDLE_DESC" default="0" onchange="rsm_check_handle(this.value)">
+			<option value="0">RSM_CONF_BOUNCE_HANDLE_MANUAL</option>
+			<option value="1">RSM_CONF_BOUNCE_HANDLE_AUTO</option>
+			<option value="2">RSM_CONF_BOUNCE_HANDLE_BOTH</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="bounce_rules" label="RSM_CONF_BOUNCE_RULES">
+		<field name="bounce_rule" type="list" label="RSM_CONF_BOUNCE_RULE" description="RSM_CONF_BOUNCE_RULE_DESC" default="0" onchange="rsm_check_rule(this.value)">
+			<option value="0">RSM_CONF_BOUNCE_RULE_0</option>
+			<option value="1">RSM_CONF_BOUNCE_RULE_1</option>
+			<option value="2">RSM_CONF_BOUNCE_RULE_2</option>
+		</field>
+		<field name="bounce_delete_no_action" type="radio" class="btn-group" label="RSM_CONF_BOUNCE_DELETE_NO_ACTION" description="RSM_CONF_BOUNCE_DELETE_NO_ACTION_DESC" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="bounce_to_email" type="text" label="RSM_CONF_BOUNCE_TO_EMAIL" description="RSM_CONF_BOUNCE_TO_EMAIL_DESC" size="50" class="input-large" default="" />
+		<field name="bounce_delete_forward" type="radio" class="btn-group" label="RSM_CONF_BOUNCE_DELETE_FORWARD" description="RSM_CONF_BOUNCE_DELETE_FORWARD_DESC" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="subscriber_rule" type="list" label="RSM_CONF_SUBSCRIBER_RULE" description="RSM_CONF_SUBSCRIBER_RULE_DESC" default="0">
+			<option value="0">RSM_CONF_SUBSCRIBER_RULE_0</option>
+			<option value="1">RSM_CONF_SUBSCRIBER_RULE_1</option>
+			<option value="2">RSM_CONF_SUBSCRIBER_RULE_2</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="joomla">
+		<field name="enable_jur" type="radio" class="btn-group" label="RSM_CONF_ENABLE_JUR" description="RSM_CONF_ENABLE_JUR_DESC" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="jur_auto" type="radio" class="btn-group" label="RSM_CONF_JUR_AUTO" description="RSM_CONF_JUR_AUTO_DESC" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="jur_list" type="rslists" label="RSM_CONF_JUR_LIST" description="RSM_CONF_JUR_LIST_DESC" size="1" class="input-large" default="0" select="true" onchange="rsm_fields(this.value)" />
+		<field name="jur_name" type="list" label="RSM_CONF_JUR_NAME" description="RSM_CONF_JUR_NAME_DESC" default="0">
+			<option value="0">RSM_IGNORE</option>
+		</field>
+		<field name="jur_username" type="list" label="RSM_CONF_JUR_USERNAME" description="RSM_CONF_JUR_USERNAME_DESC" default="0">
+			<option value="0">RSM_IGNORE</option>
+		</field>
+	</fieldset>
+	
+	<field name="ar_counter" type="hidden" filter="unset" />
+	<field name="cron_interval_last_check" type="hidden" filter="unset" />
+	<field name="cron_date" type="hidden" filter="unset" />
+
+</form>

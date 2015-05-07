@@ -1,0 +1,24 @@
+.rsmail {
+	width: 100%;
+}
+
+.rsmail label {
+	display: block;
+	margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.rsmail input {
+	width: 90%;
+}
+
+#rsmail_captcha a,
+#rsmail_captcha a:hover,
+#rsmail_captcha a:focus {
+	text-decoration: none !important;
+	background: none repeat scroll 0 0 transparent !important;
+}
+
+.rsm_err {
+	border: 1px solid red;
+}

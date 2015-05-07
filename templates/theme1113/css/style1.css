@@ -1,0 +1,294 @@
+body{background:url(../images/texture.jpg) 50% 0;}
+
+/*Logo*/
+
+#rt-logo{
+	background:url(../images/logo/newlogo.png) top left no-repeat;
+    width: 250px;
+	height: 95px;
+	margin-left:-4px;
+        background-size: contain;
+}
+
+
+/*Buttons*/
+
+a.moduleItemReadMore,
+a.k2ReadMore,	
+div.itemCommentsForm form input#submitCommentButton,
+input[type="submit"],
+button.button,
+.component-content div.toggle-editor a{border:none;}
+	
+a.moduleItemReadMore:hover,
+a.k2ReadMore:hover,
+div.itemCommentsForm form input#submitCommentButton:hover,
+input[type="submit"]:hover,
+button.button:hover,
+.component-content div.toggle-editor a:hover{box-shadow:0 1px 2px rgba(130,130,130,.39),0 1px 0 rgba(103,133,253,.5) inset;}
+
+/*Typhography*/
+
+.module-title h2.title,
+div.catItemHeader h3.catItemTitle,
+div.catItemHeader h3.catItemTitle a,
+div.itemHeader h2.itemTitle,
+div.userItemHeader h3.userItemTitle,
+div.userItemHeader h3.userItemTitle a,
+div.itemCommentsForm h3,
+h3.itemCommentsCounter,
+div.k2AccountPage th.k2ProfileHeading,
+div.componentheading,
+div.genericItemHeader h2.genericItemTitle,
+div.genericItemHeader h2.genericItemTitle a,.news div.k2ItemsBlock ul li a.moduleItemTitle,.collection div.k2ItemsBlock ul li a.moduleItemTitle,.hair_styles div.k2ItemsBlock ul li a.moduleItemTitle,h4,.posts div.k2ItemsBlock ul li a.moduleItemTitle,
+h1,.fashion_show div.k2ItemsBlock ul li a.moduleItemTitle,.posts div.k2ItemsBlock ul li a.moduleItemTitle,div.componentheading, h2.k2ProfileHeading,h1.contentTitle,.view div.k2ItemsBlock ul li a.moduleItemTitle {	color:#6a6a6b !important;text-shadow:1px 1px #fff;}
+div.catItemHeader h3.catItemTitle a:hover,div.userItemHeader h3.userItemTitle a:hover,div.genericItemHeader h2.genericItemTitle a:hover,.news div.k2ItemsBlock ul li a.moduleItemTitle:hover,.collection div.k2ItemsBlock ul li a.moduleItemTitle:hover,.hair_styles div.k2ItemsBlock ul li a.moduleItemTitle:hover,.posts div.k2ItemsBlock ul li a.moduleItemTitle:hover,.fashion_show div.k2ItemsBlock ul li a.moduleItemTitle:hover,.posts div.k2ItemsBlock ul li a.moduleItemTitle:hover{color:#6785fd !important;}
+.top_block div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemTitle{color:#fff;text-shadow:1px 1px 3px rgba(0,0,0,.15);}
+
+
+/*=== Top Positions ===*/
+
+#rt-top{}
+#rt-top .rt-container{}
+
+.menutop li.root > .item{background:url(../images/menu_active.gif) 0 38px repeat-x;text-shadow:1px 1px #fff;}
+.menutop li.root > .item:hover,
+.menutop li.root.active > .item,
+.menutop li.root.f-mainparent-itemfocus > .item{
+	background:url(../images/menu_active.png) 0 35px repeat-x;
+}
+
+/*=== Header Positions ===*/
+
+#rt-header{background:url(../images/texture.jpg) 50% 0}
+#rt-header .rt-container{}
+
+/*=== Showcase Positions ===*/
+
+#rt-showcase{}
+#rt-showcase .rt-container{}
+
+.nivo-controlNav a{
+	background:url(../images/slider_nav.png) repeat-x;
+}
+
+.nivo-controlNav a.active,
+.nivo-controlNav a:hover {
+	background:url(../images/slider_nav_active.png) repeat-x;
+}
+
+.caption-body{color:#6785fd;}
+.caption-body .moduleItemTitle{color:#fff;}
+
+/*=== Feature Positions ===*/
+
+#rt-feature{}
+#rt-feature .rt-container{}
+
+/*=== Utility Positions ===*/
+
+#rt-utility{}
+#rt-utility .rt-container{}
+
+/*=== MainTop Positions ===*/
+
+#rt-maintop{}
+#rt-maintop .rt-container{}
+
+.top_block div.k2ItemsBlock ul li div.moduleItemIntrotext{color:#535353;}
+.top_block div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemTitle:hover{color:#BFCAFE;}
+.view div.k2ItemsBlock ul li a.moduleItemTitle:hover{color:#6785fd !important}
+
+/*=== MainContent ===*/
+
+#rt-main{}
+#rt-main .rt-container{}
+
+
+.rt-container {background: none;}
+
+.sortbytype a{color:#a0a0a0;}
+.sortbytype a:hover, 
+.sortbytype a.active_sort{color:#6785fd;}
+
+#blog div.catItemHeader,#blog div.itemHeader,div.social-button span.label,div.itemComments ul.itemCommentsList li span.commentDate,div.itemComments ul.itemCommentsList li span.commentLink a,
+div.itemComments ul.itemCommentsList li span.commentLink a:hover,
+div.itemComments ul.itemCommentsList li span.commentToolbar a,
+div.itemComments ul.itemCommentsList li span.commentToolbar a:hover,div.genericItemHeader,div.userItemHeader{color:#6785fd}
+#blog div.catItemHeader a,#blog div.itemHeader a,div.itemComments ul.itemCommentsList li span.commentAuthorName a:hover{color:#6785fd;}
+#blog div.catItemHeader a:hover,#blog div.itemHeader a:hover,div.itemComments ul.itemCommentsList li span.commentLink a:hover,
+div.itemComments ul.itemCommentsList li span.commentToolbar a:hover,div.itemComments ul.itemCommentsList li span.commentAuthorName,div.itemComments ul.itemCommentsList li span.commentAuthorName a{color:#5a5a5b;}
+
+/*Pagination*/
+
+div.k2Pagination,
+div.pagination {
+	color: #646464;
+	}
+
+#k2Container .k2Pagination ul li span,
+#k2Container .k2Pagination ul li a,
+div.pagination ul li a,
+div.pagination ul li span{
+	}
+	
+#k2Container .k2Pagination ul li.pagination-start span.pagenav,
+#k2Container .k2Pagination ul li.pagination-prev span.pagenav,
+#k2Container .k2Pagination ul li.pagination-end span.pagenav,
+#k2Container .k2Pagination ul li.pagination-next span.pagenav,
+div.pagination ul li.pagination-start span.pagenav,
+div.pagination ul li.pagination-prev span.pagenav,
+div.pagination ul li.pagination-end span.pagenav,
+div.pagination ul li.pagination-next span.pagenav,
+div.itemComments div.itemCommentsPagination ul li.pagination-start span.pagenav,
+div.itemComments div.itemCommentsPagination ul li.pagination-prev span.pagenav,
+div.itemComments div.itemCommentsPagination ul li.pagination-end span.pagenav,
+div.itemComments div.itemCommentsPagination ul li.pagination-next span.pagenav{
+	}
+	
+#k2Container .k2Pagination ul li span.pagenav,
+div.pagination ul li span.pagenav,
+div.itemComments .itemCommentsPagination ul li span.pagenav{
+	color:#747474;
+}
+
+#k2Container .k2Pagination ul li.pagination-start a,
+#k2Container .k2Pagination ul li.pagination-prev a,
+#k2Container .k2Pagination ul li span,
+#k2Container .k2Pagination ul li a,
+#k2Container .k2Pagination ul li.pagination-end a,
+#k2Container .k2Pagination ul li.pagination-next a,
+div.pagination ul li.pagination-start a,
+div.pagination ul li.pagination-prev a,
+div.pagination ul li span,
+div.pagination ul li a,
+div.pagination ul li.pagination-end a,
+div.pagination ul li.pagination-next a,
+div.itemComments div.itemCommentsPagination ul li.pagination-start a,
+div.itemComments div.itemCommentsPagination ul li.pagination-prev a,
+div.itemComments div.itemCommentsPagination ul li span,
+div.itemComments div.itemCommentsPagination ul li a,
+div.itemComments div.itemCommentsPagination ul li.pagination-end a,
+div.itemComments div.itemCommentsPagination ul li.pagination-next a{
+	color:#6785fd;
+}
+	
+#k2Container .k2Pagination ul li.pagination-start a:hover,
+#k2Container .k2Pagination ul li.pagination-prev a:hover,
+#k2Container .k2Pagination ul li.pagination-end a:hover,
+#k2Container .k2Pagination ul li.pagination-next a:hover,
+#k2Container .k2Pagination ul li a:hover,
+div.pagination ul li.pagination-start a:hover,
+div.pagination ul li.pagination-prev a:hover,
+div.pagination ul li.pagination-end a:hover,
+div.pagination ul li.pagination-next a:hover,
+div.pagination ul li a:hover,
+div.itemComments div.itemCommentsPagination ul li.pagination-start a:hover,
+div.itemComments div.itemCommentsPagination ul li.pagination-prev a:hover,
+div.itemComments div.itemCommentsPagination ul li.pagination-end a:hover,
+div.itemComments div.itemCommentsPagination ul li.pagination-next a:hover,
+div.itemComments div.itemCommentsPagination ul li a:hover{
+	color:#747474}
+	
+/*Forms*/
+
+#jform_contact_message,
+#commentText,textarea{
+	background:#fff;
+	color:#a0a0a0;
+	border:1px solid #d8d8d8;
+}
+
+#form-login .inputbox,
+#com-form-login .inputbox, 
+#josForm .inputbox,
+input.inputbox[type="text"],
+input[type="text"],
+input.inputbox[type="password"],
+input.inputbox[type="email"],
+input#url,
+input.required[type="text"],
+input.required[type="password"],
+input.required[type="email"]{
+	background:#fff;
+	color:#a0a0a0;
+	border:1px solid #d8d8d8;
+	}
+	
+	
+#contact-form label,
+div.k2AccountPage table.admintable label{
+	font-size:1em;
+	line-height:2em;
+	}
+	
+/*Comments*/
+
+div.itemComments ul.itemCommentsList li,div.itemComments ul.itemCommentsList li.unpublishedComment,div.itemComments ul.itemCommentsList li.authorResponse{
+	background:#fafafa;}
+	
+/*Google Map*/
+	
+div.map-wrapper{
+	background:#fff;
+	border:1px solid #d8d8d8;
+	}
+
+/*Search Results*/
+
+div.form-limit-and-counter{
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+
+.dropcap{color:#fff;text-transform:1px 1px 3px rgba(0,0,0,.15);}
+
+.news div.k2ItemsBlock ul li span.moduleItemDateCreated,.news div.k2ItemsBlock ul li a.moduleItemReadMore,.collection div.k2ItemsBlock ul li a.moduleItemReadMore,.hair_styles div.k2ItemsBlock ul li a.moduleItemReadMore,.posts div.k2ItemsBlock ul li span.moduleItemDateCreated,.posts div.k2ItemsBlock ul li a.moduleItemReadMore{color:#6785fd;box-shadow:none;}
+.news div.k2ItemsBlock ul li a.moduleItemReadMore:hover,.collection div.k2ItemsBlock ul li a.moduleItemReadMore:hover,.hair_styles div.k2ItemsBlock ul li a.moduleItemReadMore:hover,.posts div.k2ItemsBlock ul li a.moduleItemReadMore:hover{color:#000;}
+
+/*=== MainBottom Positions ===*/
+
+#rt-mainboottom{}
+#rt-mainbottom .rt-container{}
+.list1 li a{color:#a0a0a0;}
+.list1 li a:hover{color:#6785fd;}
+
+/*=== Bottom Positions ===*/
+
+#rt-bottom{color:inherit;}
+#rt-bottom .rt-container{}
+
+
+/*=== Footer Positions ===*/
+
+#footer{}
+#footer .footer-container{}
+
+
+#rt-footer, #rt-copyright {
+    color: inherit;
+}
+
+.copyright a{color:#6785fd;}
+.copyright a:hover{color:inherit;}
+
+div#footer div.k2CategoriesListBlock ul li a,
+.articles div.k2ItemsBlock ul li a,div#footer div.k2ArchivesBlock ul li a{color:#a0a0a0}
+div#footer div.k2CategoriesListBlock ul li a:hover,
+.articles div.k2ItemsBlock ul li a:hover,div#footer div.k2ArchivesBlock ul li a:hover{color:#6785fd;}
+#rt-slider{
+padding-bottom:20px;
+}
+#rt-slider .rt-container{
+text-align: center;
+}
+#rt-slider .rt-container .vt_nivo_slider{
+width: 75%;
+margin: 0 auto;
+}
+#rt-slider .rt-container .vt_nivo_slider #vt_nivo_slider143 {
+padding-bottom:30px;
+}
+#rt-slider .rt-container .vt_nivo_slider .nivo-controlNav{
+bottom: 5px;
+}

@@ -1,0 +1,26 @@
+#accordion dt.ui-accordion-header{
+	background:#999;
+	line-height:3em;
+	margin-bottom:1px;}
+	
+#accordion dt.ui-accordion-header:hover{
+	background:#000;}
+	
+#accordion dt.ui-accordion-header a{
+	display:block;
+	line-height:3em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding:0 20px;
+	text-transform:uppercase;
+	color:#fff;
+	}
+	
+#accordion dd{
+    padding: 24px 20px 30px;
+		}
+		
+#accordion dd p{
+	margin-bottom:21px;}
+	
+#accordion dd .moduleItemIntrotext{}
+	

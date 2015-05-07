@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>com_rsmail</name>
+	<creationDate>17/09/2009</creationDate>
+	<author>www.rsjoomla.com</author>
+	<copyright>(C) 2007-2009 www.rsjoomla.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license> 
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>With RSMail! you can organize your visitors into lists and send them newsletters and e-mails. RSMail! is the ideal extension for sending customized e-mails. Each list can have an unlimited number of custom fields that you can use when sending the e-mails.</description>
+	<scriptfile>script.rsmail.php</scriptfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>helpers</folder>
+		<folder>images</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>rsmail.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_rsmail.ini</language>
+	</languages>
+
+	<administration>
+		<menu img="../administrator/components/com_rsmail/assets/images/logos/rsmail.gif">COM_RSMAIL</menu>
+		<submenu>
+			  <menu link="option=com_rsmail&amp;view=lists">COM_RSMAIL_MENU_LISTS</menu>
+			  <menu link="option=com_rsmail&amp;view=subscribers">COM_RSMAIL_MENU_SUBSCRIBERS</menu>
+			  <menu link="option=com_rsmail&amp;view=messages">COM_RSMAIL_MENU_MESSAGES</menu>
+			  <menu link="option=com_rsmail&amp;view=autoresponders">COM_RSMAIL_MENU_FOLLOWUPS</menu>
+			  <menu link="option=com_rsmail&amp;view=templates">COM_RSMAIL_MENU_TEMPLATES</menu>
+			  <menu link="option=com_rsmail&amp;view=sessions">COM_RSMAIL_MENU_SESSIONS</menu>
+			  <menu link="option=com_rsmail&amp;view=reports">COM_RSMAIL_MENU_REPORTS</menu>
+			  <menu link="option=com_rsmail&amp;view=cronlogs">COM_RSMAIL_MENU_CRON_LOGS</menu>
+			  <menu link="option=com_rsmail&amp;view=import">COM_RSMAIL_MENU_IMPORT</menu>
+			  <menu link="option=com_rsmail&amp;view=settings">COM_RSMAIL_MENU_SETTINGS</menu>
+			  <menu link="option=com_rsmail&amp;view=updates">COM_RSMAIL_MENU_UPDATES</menu>
+		</submenu>
+
+		<files folder="admin">
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>install.mysql.nonutf8.sql</filename>
+			<filename>uninstall.mysql.sql</filename>
+			<filename>templates.sql</filename>
+		
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>files</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>rsmail.php</filename>
+		</files>
+
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_rsmail.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_rsmail.sys.ini</language>
+		</languages>
+
+	</administration>
+</extension>

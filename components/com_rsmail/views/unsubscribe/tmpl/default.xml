@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Show Subscriber Lists" >
+		<message>
+			<![CDATA[Show the lists where the user subscribed]]>
+		</message>
+	</layout>
+<state>
+	<name>Subscriber lists</name>
+	<description>View the subscribers lists allowing him to unsubscribe.</description>
+</state>
+</metadata>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>FW Blog Article</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>FW Blog Article</description>
+	<files>
+		<filename module="mod_fwblog_article">mod_fwblog_article.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_fwblog_article.xml</filename>
+	</files>
+
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_WHO_ONLINE" />
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+			<field name="catid" type="category" extension="com_content" 
+					label="Category">
+				<option value="">JOPTION_ALL_CATEGORIES</option>
+			</field>
+			
+			<field name="ItemId" type="text" 
+				label="Itemid" description="Ex:6"></field>
+		</fieldset>
+		
+		<fieldset name="advanced">
+			<field
+				name="moduleclass_sfx"
+				type="text"
+				label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			
+			
+		</fieldset>
+
+		</fields>
+	</config>
+</extension>

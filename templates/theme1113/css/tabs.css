@@ -1,0 +1,49 @@
+.ui-tabs { position: relative; padding: 0; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+
+div.k2ItemsBlock.tabs a.moduleItemImage{
+	border:1px solid #666666;
+	float:left;
+	display:block;
+	margin-right:20px;
+    margin-top: 4px;
+
+	}
+	
+div.k2ItemsBlock.tabs .ui-tabs-nav{
+	overflow:hidden;
+	width:100%;}
+	
+div.k2ItemsBlock.tabs .ui-tabs-nav li{
+	margin:0 1px;}
+	
+div.k2ItemsBlock.tabs .ui-tabs-nav li a{
+	color:#fff;
+	font-weight:bold;
+	background:#999;
+	background-position: left top;
+	padding:11px 16px;
+	border:1px solid #666666;
+}
+	
+div.k2ItemsBlock.tabs .ui-tabs-nav li a:hover,
+div.k2ItemsBlock.tabs .ui-tabs-nav li.ui-state-active a{
+	color:#fff;
+	background:#000;
+	border:1px solid #666666;
+}
+
+div.k2ItemsBlock.tabs .ui-tabs-panel{
+    padding: 24px 20px 0 0;}
+		
+div.k2ItemsBlock.tabs div.moduleItemIntrotext {
+    padding-bottom: 9px;
+}

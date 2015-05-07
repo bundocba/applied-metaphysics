@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="Delivery" type="radio" class="btn-group" label="RSM_DELIVERY" description="RSM_DELIVERY_DESC" default="0">
+		<option value="0" onclick="rsm_hide(this.value);">RSM_DELIVERY_IMEDIATELY</option>
+		<option value="1" onclick="rsm_hide(this.value);">RSM_DELIVERY_SCHEDULED</option>
+	</field>
+	<field name="DeliverDate" type="calendar" label="RSM_DELIVERY_DATE" description="" class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S" filter="user_utc" labelclass="control-label" required="true" />
+	<field name="LinkHistory" type="checkbox" label="RSM_LINK_HISTORY" description="" class="inputbox" value="1" onclick="rsm_warning(1)" />
+	<field name="OpensHistory" type="checkbox" label="RSM_OPENS_HISTORY" description="" class="inputbox" value="1" onclick="rsm_warning(0)" />
+</form>

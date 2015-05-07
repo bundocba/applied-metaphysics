@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="IdMessage" type="hidden" label="" description="" size="10" default="0" readonly="true" />
+	<field name="MessageName" type="text" class="input-xlarge" label="RSM_FROM_EMAIL_NAME" description="RSM_FROM_EMAIL_NAME_DESC" size="50" />
+	<field name="MessageSenderEmail" type="email" class="input-xlarge" label="RSM_FROM_EMAIL_MESSAGE" description="RSM_FROM_EMAIL_MESSAGE_DESC" required="true" size="50" validate="email" />
+	<field name="MessageSenderName" type="text" class="input-xlarge" label="RSM_FROM_NAME_MESSAGE" description="RSM_FROM_NAME_MESSAGE_DESC" required="true" size="50" />
+	<field name="MessageReplyTo" type="email" class="input-xlarge" label="RSM_REPLY_TO_MESSAGE" description="RSM_REPLY_TO_MESSAGE_DESC" size="50" validate="email" />
+	<field name="MessageReplyToName" type="text" class="input-xlarge" label="RSM_REPLY_TO_NAME" description="RSM_REPLY_TO_NAME_DESC" size="50" />
+	<field name="MessageSubject" type="text" class="input-xxlarge" label="RSM_SUBJECT_MESSAGE" description="RSM_SUBJECT_MESSAGE_DESC" required="true" size="50" />
+	<field name="MessageType" type="radio" class="btn-group" label="RSM_MESSAGE_MODE" description="RSM_MESSAGE_MODE_DESC" size="50" default="1">
+		<option value="0" onclick="Joomla.submitbutton('message.apply');">TEXT</option>
+		<option value="1" onclick="Joomla.submitbutton('message.apply');">HTML</option>
+	</field>
+	<field name="MessageBody" type="editor" class="inputbox" label="RSM_MESSAGE_BODY" description="RSM_MESSAGE_BODY_DESC" filter="JComponentHelper::filterText" buttons="true" required="true" />
+	<field name="MessageBodyNoHTML" type="textarea" cols="90" rows="20" class="input-xxlarge" label="RSM_MESSAGE_BODY_NO_HTML" description="RSM_MESSAGE_BODY_NO_HTML_DESC" />
+</form>

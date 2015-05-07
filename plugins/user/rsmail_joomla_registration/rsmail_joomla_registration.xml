@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="user" method="upgrade">
+	<name>User - RSMail Joomla Registration</name>
+	<author>RSJoomla</author>
+	<creationDate>14/08/2009</creationDate>
+	<copyright>GNU General Public License</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>This plugin will allow you to automaticaly subscribe the new users via the Registration From. &lt;font color="red"&gt;Make sure you publish the plugin&lt;/font&gt;</description>
+	<files>
+		<filename plugin="rsmail_joomla_registration">rsmail_joomla_registration.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

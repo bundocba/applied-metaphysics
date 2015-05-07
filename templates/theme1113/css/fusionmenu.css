@@ -1,0 +1,91 @@
+/**
+ * @package   Gantry Template - RocketTheme
+ * @version   3.2.15 January 25, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+
+/* Global */
+.menutop li {height: auto;margin: 0;padding: 0;position: relative;list-style: none;}
+.menutop em {font-size: 80%;font-weight: normal;display: block;font-style: normal;}
+.menutop li .item, .menutop li.active .item {display: block;margin: 0;text-decoration: none;float: none;width: auto;}
+.menutop li .fusion-submenu-wrapper {float: none;left: -999em;position: absolute;z-index: 500;}
+.menutop li:hover li ul, .menutop li.sfHover li ul {top: -999em;}
+.menutop li:hover ul, .menutop li.sfHover ul {top: 0;}
+
+/* Root Items */
+.menutop {list-style: none;margin: 0;position: relative;line-height: 1em;float:right;background:url(../images/menu_tail.png) 0 100% repeat-x;font-family: 'Open Sans', sans-serif;text-transform:uppercase;padding:0 0 1px;}
+.menutop li.root {float: left;margin:0 0 0 38px;}
+.menutop li.root:first-child{margin:0;}
+.menutop li.root > .item {
+	white-space: nowrap;
+	display: block;
+	padding:8px 0 10px;
+	font-size: 15px;
+	z-index: 7 !important;
+	cursor: pointer;
+	position: relative;
+	outline: none;
+	-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;
+}
+
+.menutop li.root > span.item{cursor:default;}	
+
+.menutop li.root > .item span {display: block;margin: 0;outline: none;width: auto;line-height:20px;}
+.menutop li.root > .item em {font-size: 10px;display: block;text-transform: lowercase;line-height: 0.3em;}
+.menutop li.root .subtext span {line-height: 1.9em;}
+.menutop li.root > .item img {margin: 0 4px 0 0;vertical-align: text-bottom;}
+
+/* Dropdown Surrounds */
+.menutop ul {padding:4px 0; margin: 0px;border-radius:5px;box-shadow:0 1px 2px rgba(130,130,130,.39),0 1px 0 #fff inset;}
+.menutop .drop-bot {height: 0px;overflow: hidden;clear: both;}
+.menutop .fusion-submenu-wrapper {height: auto !important;}
+
+/* Dropdown Items */
+.menutop ul li {padding: 0;display: block;}
+.menutop ul li > .item {
+	padding: 0 10px;
+	height: auto;
+	display: block;
+	font-size: 12px;
+	cursor: pointer;
+	-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-o-transition: all 0.4s ease;transition: all 0.4s ease;
+	}
+	
+.menutop ul li > .item:hover,
+.menutop ul li.active > .item,
+.menutop ul li.f-menuparent-itemfocus > .item{
+	}
+
+.menutop ul li > .item span {display: block;width: 100%;overflow: hidden;line-height:24px;}
+.menutop ul li .item img {float: left;margin: 8px 6px 0 0;vertical-align: top;}
+.menutop ul li .nolink span {display: block;}
+.menutop ul li span.item {cursor: default;outline: none;}
+.menutop ul li .subtext span {line-height: 1.9em;}
+.menutop ul li .subtext em {line-height: 0.6em;padding-bottom: 7px;text-transform: lowercase;}
+
+/* No JS */
+.menutop li.root:hover > .fusion-submenu-wrapper {top: 35px;left: 0;}
+.menutop ul li:hover > .fusion-submenu-wrapper {left: 180px;top: 0;}
+
+/* Fusion JS */
+.fusion-js-container {display: block;height: 0;left: 0;overflow: visible;position: absolute;top: 0;z-index: 600000!important;background: transparent !important;}
+.fusion-js-subs {display: none;margin: 0;overflow: hidden;position: absolute;}
+
+/* Grouped & Modules */
+.menutop .fusion-grouped {padding-bottom: 10px;}
+.menutop .fusion-grouped ol {padding: 0;}
+.menutop .fusion-grouped ol li {padding: 0 15px;}
+.menutop .fusion-grouped ol li .item {padding: 0 15px;}
+.menutop .fusion-grouped ol li span {font-size: 85%;line-height: 2em;}
+.menutop .type-module ol {padding: 0;}
+.menutop .type-module ol li {padding: 0;}
+.menutop .type-module ol li .fusion-modules {background: none;}
+.menutop .type-module ol li .fusion-module {padding: 0;background: none;overflow: hidden;}
+.menutop .fusion-module, .menutop .fusion-modules, .menutop .fusion-grouped {display: block;}
+.menutop .fusion-modules.item {padding: 15px;}
+.menutop .fusion-module em {display: inline;font-size: inherit;font-style: italic;}
+.menutop .fusion-module a {font-size: inherit;line-height: 130%;}
+.menutop .fusion-module p, .menutop .fusion-modules p {line-height: 160%;}
+.menutop ul li.grouped-parent > .daddy span {background: none;}

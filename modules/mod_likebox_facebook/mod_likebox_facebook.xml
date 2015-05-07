@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>Module Likebox Facebook</name>
+	<author>Anthony</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>2.5.0</version>
+	<description>Module Likebox Facebook</description>
+	<files>
+		<filename module="mod_likebox_facebook">mod_likebox_facebook.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_likebox_facebook.xml</filename>
+	</files>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_WHO_ONLINE" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="url_likebox"
+					type="text" default="http://www.facebook.com/platform"
+					label="Url Facebook"/>
+		
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="Module sfx"/>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

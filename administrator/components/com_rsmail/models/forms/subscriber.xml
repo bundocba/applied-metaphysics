@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="IdSubscriber" type="hidden" label="" description="" size="10" default="0" readonly="true" />
+	<field name="SubscriberEmail" type="email" class="input-xxlarge" label="RSM_SUBSCRIBER_EMAIL" description="RSM_SUBSCRIBER_EMAIL_DESC" required="true" size="50" validate="email" />
+	
+	<field name="IdList" type="hidden" filter="unset" />
+	<field name="DateSubscribed" type="hidden" filter="unset" />
+	<field name="SubscriberIp" type="hidden" filter="unset" />
+	<field name="UserId" type="hidden" filter="unset" />
+	<field name="published" type="hidden" filter="unset" />
+</form>

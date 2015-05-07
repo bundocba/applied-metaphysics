@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>RSMail Newsletter</name>
+	<creationDate>14/08/2009</creationDate>
+	<author>www.rsjoomla.com</author>
+	<copyright>GNU General Public License</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>suport@rsjoomla.com</authorEmail>
+	<authorUrl>http://www.rsjoomla.com</authorUrl>
+	<version>1.1</version>
+	<description>RSMail Newsletter</description>
+
+	<files>
+		<filename module="mod_rsmail">mod_rsmail.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_rsmail/assets/fields">
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="enablemultiple" type="list" default="1" label="RSM_MODULE_MULTIPLE_LISTS" description="RSM_MODULE_MULTIPLE_LISTS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="RSM_MODULE_SPACER1" type="spacer" hr="false" />
+				<field name="listid" type="lists"  default="" label="RSM_MODULE_LISTS" description="RSM_MODULE_LISTS_DESC" />
+				<field name="RSM_MODULE_SPACER2" type="spacer" hr="false" />
+				<field name="fieldids" type="fields"  default="" label="RSM_MODULE_FIELDS" description="RSM_MODULE_FIELDS_DESC" />
+				<field name="introtext" type="textarea" rows="5" cols="35" default="" label="RSM_MODULE_INTRO" description="RSM_MODULE_INTRO_DESC" />
+				<field name="finaltext" type="textarea" rows="5" cols="35" default="" label="RSM_MODULE_POST" description="RSM_MODULE_POST_DESC" />
+
+				<field name="RSM_MODULE_SPACER3" type="spacer" hr="false" />
+				
+				<field name="captcha_enable" type="list" default="0" label="RSM_MODULE_ENABLE_CAPTCHA" description="RSM_MODULE_ENABLE_CAPTCHA_DESC" onchange="rsm_captcha(this.value);">
+					<option value="0">JNO</option>
+					<option value="1">RSM_MODULE_ENABLE_CAPTCHA1</option>
+					<option value="2">RSM_MODULE_ENABLE_CAPTCHA2</option>
+				</field>
+				<field name="captcha_characters" type="text" default="5" label="RSM_MODULE_CAPTCHA_CHARACTERS" description="RSM_MODULE_CAPTCHA_CHARACTERS_DESC" />
+				<field name="captcha_generate_lines" type="radio" class="btn-group" default="1" label="RSM_MODULE_CAPTCHA_LINES" description="RSM_MODULE_CAPTCHA_LINES_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="captcha_case_sensitive" type="radio" class="btn-group" default="0" label="RSM_MODULE_CAPTCHA_CASE" description="RSM_MODULE_CAPTCHA_CASE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="recaptcha_public_key" type="text" default="" label="RSM_MODULE_CAPTCHA_PUB_KEY" description="RSM_MODULE_CAPTCHA_PUB_KEY_DESC" />
+				<field name="recaptcha_private_key" type="text" default="" label="RSM_MODULE_CAPTCHA_PRI_KEY" description="RSM_MODULE_CAPTCHA_PRI_KEY_DESC" />
+				<field name="recaptcha_theme" type="list" default="blackglass" label="RSM_MODULE_CAPTCHA_THEME" description="RSM_MODULE_CAPTCHA_THEME_DESC">
+					<option value="red">RSM_MODULE_CAPTCHA_THEME_RED</option>
+					<option value="white">RSM_MODULE_CAPTCHA_THEME_WHITE</option>
+					<option value="blackglass">RSM_MODULE_CAPTCHA_THEME_BLACKGLASS</option>
+					<option value="clean">RSM_MODULE_CAPTCHA_THEME_CLEAN</option>
+				</field>
+				<field name="javascript" type="javascript" label="" />
+			</fieldset>
+		</fields>
+	</config>
+	
+	<languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_rsmail.ini</language>
+    </languages>
+</extension>

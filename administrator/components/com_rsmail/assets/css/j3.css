@@ -1,0 +1,98 @@
+.icon-rsmail32:before {
+    color: #3F2FBC;
+    content: "y";
+}
+
+.icon-import:before,
+.icon-import-btn:before {
+	content: "'";
+}
+
+.icon-export-btn:before {
+	content: "(";
+}
+
+.icon-send:before {
+	content: "5";
+}
+
+.icon-unpublish-32:before {
+	content: "k";
+}
+
+.icon-addtemplate:before {
+	content: "k";
+}
+
+.icon-previewb:before {
+	content: "e";
+}
+
+.icon-back:before {
+	content: "l";
+}
+
+.icon-cronlogs:before {
+	content: "u";
+}
+
+.rsm_message_container {
+	display: inline-block;
+	margin-left: 50px;
+    vertical-align: middle;
+}
+
+#rsm_new_field {
+	margin: 0;
+}
+
+#rsm_filter {
+	line-height:26px;
+}
+
+#rsm_select_all_btn {
+	padding: 4px;
+}
+
+ul#rsm_filters {
+	margin: 0;
+}
+
+#rsm_progress_bar ul {
+	margin: 0;
+}
+
+#rsm_action_select_chzn, 
+#rsm_destination_select_chzn {
+	vertical-align: middle;
+}
+
+#selectedfile {
+	width: 400px;
+}
+
+#IdList_chzn {
+	vertical-align: sub;
+}
+
+#rsm_progress_bar ul li.rsm_done_first {
+	background-position: 30% 100%;
+}
+
+.rsm_ar_input {
+	margin-bottom: 0 !important;
+}
+
+#DelayType_chzn {
+	vertical-align: sub;
+}
+
+.rsm_chart_chk {
+	margin: 0 0 0 5px !important;
+}
+
+.rsm_chart_lbl {
+	display: inline;
+	margin:0;
+	padding:0;
+}

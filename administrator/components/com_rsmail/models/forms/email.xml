@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="language" type="language" label="RSM_CONF_LANGUAGE" description="RSM_CONF_LANGUAGE_DESC" size="1" default="" onchange="document.adminForm.submit();" />
+	
+	<field name="confirmation_enable" type="radio" class="btn-group" label="RSM_CONF_MESSAGE_ENABLE" description="RSM_CONF_MESSAGE_ENABLE_DESC" default="0">
+		<option value="0">JNO</option>
+		<option value="1">JYES</option>
+	</field>
+	<field name="unsubscribe_enable" type="radio" class="btn-group" label="RSM_CONF_MESSAGE_ENABLE" description="RSM_CONF_MESSAGE_ENABLE_DESC" default="1">
+		<option value="0">JNO</option>
+		<option value="1">JYES</option>
+	</field>
+	
+	<field name="confirmation_from" type="text" label="RSM_CONF_MESSAGE_FROM" description="RSM_CONF_MESSAGE_FROM_DESC" size="50" class="input-xlarge" default="" />
+	<field name="unsubscribe_from" type="text" label="RSM_CONF_MESSAGE_FROM" description="RSM_CONF_MESSAGE_FROM_DESC" size="50" class="input-xlarge" default="" />
+	<field name="unsubscribelink_from" type="text" label="RSM_CONF_MESSAGE_FROM" description="RSM_CONF_MESSAGE_FROM_DESC" size="50" class="input-xlarge" default="" />
+	
+	<field name="confirmation_fromname" type="text" label="RSM_CONF_MESSAGE_FROMNAME" description="RSM_CONF_MESSAGE_FROMNAME_DESC" size="50" class="input-xlarge" default="" />
+	<field name="unsubscribe_fromname" type="text" label="RSM_CONF_MESSAGE_FROMNAME" description="RSM_CONF_MESSAGE_FROMNAME_DESC" size="50" class="input-xlarge" default="" />
+	<field name="unsubscribelink_fromname" type="text" label="RSM_CONF_MESSAGE_FROMNAME" description="RSM_CONF_MESSAGE_FROMNAME_DESC" size="50" class="input-xlarge" default="" />
+	
+	<field name="confirmation_subject" type="text" label="RSM_CONF_MESSAGE_SUBJECT" description="RSM_CONF_MESSAGE_SUBJECT_DESC" size="50" class="input-xlarge" default="" />
+	<field name="unsubscribe_subject" type="text" label="RSM_CONF_MESSAGE_SUBJECT" description="RSM_CONF_MESSAGE_SUBJECT_DESC" size="50" class="input-xlarge" default="" />
+	<field name="unsubscribelink_subject" type="text" label="RSM_CONF_MESSAGE_SUBJECT" description="RSM_CONF_MESSAGE_SUBJECT_DESC" size="50" class="input-xlarge" default="" />
+	
+	<field name="confirmation_mode" type="radio" class="btn-group" label="RSM_CONF_MESSAGE_MODE" description="RSM_CONF_MESSAGE_MODE_DESC" default="1">
+		<option value="0">TEXT</option>
+		<option value="1">HTML</option>
+	</field>
+	<field name="unsubscribe_mode" type="radio" class="btn-group" label="RSM_CONF_MESSAGE_MODE" description="RSM_CONF_MESSAGE_MODE_DESC" default="1">
+		<option value="0">TEXT</option>
+		<option value="1">HTML</option>
+	</field>
+	<field name="unsubscribelink_mode" type="radio" class="btn-group" label="RSM_CONF_MESSAGE_MODE" description="RSM_CONF_MESSAGE_MODE_DESC" default="1">
+		<option value="0">TEXT</option>
+		<option value="1">HTML</option>
+	</field>
+	
+	<field name="confirmation_message" type="editor" class="inputbox" label="" description="" filter="JComponentHelper::filterText" buttons="true" />
+	<field name="unsubscribe_message" type="editor" class="inputbox" label="" description="" filter="JComponentHelper::filterText" buttons="true" />
+	<field name="unsubscribelink_message" type="editor" class="inputbox" label="" description="" filter="JComponentHelper::filterText" buttons="true" />
+	<field name="thankyou_message" type="editor" class="inputbox" label="" description="" filter="JComponentHelper::filterText" buttons="true" />
+	
+</form>

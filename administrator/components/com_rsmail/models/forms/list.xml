@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="IdList" type="hidden" label="" description="" size="10" default="0" readonly="true" />
+	<field name="ListName" type="text" class="input-xxlarge" label="RSM_LIST_NAME" description="RSM_LIST_NAME_DESC" required="true" size="50" />
+</form>

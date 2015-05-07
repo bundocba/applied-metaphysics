@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="IdAutoresponder" type="hidden" label="" description="" size="10" default="0" readonly="true" />
+	<field name="AutoresponderName" type="text" class="input-xlarge" label="RSM_FOLLOWUP_NAME" description="RSM_FOLLOWUP_NAME_DESC" size="50" required="true" />
+	<field name="AutoresponderType" type="radio" class="btn-group" label="RSM_FOLLOWUP_TYPE" description="RSM_FOLLOWUP_TYPE_DESC" size="50" default="0">
+		<option value="0" onclick="rsm_change_type(this.value);">RSM_START_FOLLOWUP_AFTER_SUBSCRIPTION</option>
+		<option value="1" onclick="rsm_change_type(this.value);">RSM_START_FOLLOWUP_ON_DATE</option>
+	</field>
+	<field name="AutoresponderDate" type="calendar" label="" description="" class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S" filter="user_utc" labelclass="control-label" />
+	<field name="IdLists" type="hidden" filter="unset" /> 	 
+	<field name="DateCreated" type="hidden" filter="unset" />
+</form>
